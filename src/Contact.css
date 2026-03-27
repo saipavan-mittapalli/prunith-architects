@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/* --- Contact Section --- */
+.contact-section {
+  padding: 100px 5%;
+  background-color: #000000;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #C5A059;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.section-title span {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* --- Layout Grid --- */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* --- Minimalist Form --- */
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: transparent;
+}
+option{
+  background-color: #333;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-bottom: 1px solid #C5A059;
+}
+.cta-button-framing {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background-color: #C5A059;
+  color: white; /* White text */
+  border: none; /* No border initially */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: var(--transition-btn);
+  z-index: 1;
+}
+.cta-button-framing::after {
+  content: '';
+  position: absolute;
+  inset: 0; /* Aligned perfectly with the button */
+  border: 1px solid var(--primary-gold); /* Thin frame */
+  transition: var(--transition-btn);
+  z-index: -1; /* Behind the button */
+  opacity: 0; /* Initially hidden */
+}
+
+/* --- Hover State --- */
+.cta-button-framing:hover {
+  background-color: #A38245;
+  transform: translate(2px, 2px); 
+}
+
+.cta-button-framing:hover::after {
+  opacity: 1; 
+  inset: -8px; 
+}
+
+/* --- Map --- */
+.contact-map {
+  height: 450px;
+  border-radius: 5px;
+}
+
+/* --- Insta --- */
+.insta-footer {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.insta-footer p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.insta-footer a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #d3d3d3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.insta-footer a:hover {
+  color: #C5A059;
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-map {
+    height: 300px;
+    order: 2; 
+  }
+}

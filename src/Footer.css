@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/* --- Footer Styling --- */
+.footer {
+  background-color: #1A1A1A; /* Dark Charcoal */
+  color: #FFFFFF;
+  padding: 80px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr; /* Uneven grid for better layout */
+  gap: 60px;
+  padding: 0 5%;
+}
+.logo{
+    color: #fff;
+}
+.footer-brand p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #AAAAAA;
+  max-width: 300px;
+}
+
+.footer h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #C5A059; /* Gold */
+  letter-spacing: 2px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #AAAAAA;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #C5A059;
+}
+
+.footer-contact p {
+  font-size: 0.85rem;
+  color: #AAAAAA;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.footer-contact a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px solid #C5A059;
+  padding-bottom: 2px;
+}
+
+/* --- Footer Copyright --- */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #333333;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* --- Responsive Footer --- */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack vertically on mobile/tablet */
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .footer-brand p {
+    margin: 20px auto 0 auto;
+  }
+
+  .footer-contact a {
+    display: inline-block;
+  }
+}

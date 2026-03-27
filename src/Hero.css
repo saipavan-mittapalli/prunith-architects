@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1A1A; 
+  text-align: center;
+  color: #FFFFFF;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+.hero h1 span {
+  font-style: italic;
+  font-weight: 400;
+  color: #C5A059;
+}
+
+.hero p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+/* --- Button Alignment Container --- */
+.hero-buttons {
+  display: flex;
+  flex-direction: row; /* Side by side on desktop */
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* --- Button 1: Solid (Framing) --- */
+.cta-button {
+  text-decoration: none !important;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.cta-solid {
+  background-color: #C5A059;
+  color: #FFFFFF !important;
+  border: 1px solid #C5A059;
+}
+
+/* Outline Variant */
+.cta-outline {
+  background-color: transparent;
+  color: #C5A059 !important;
+  border: 1px solid #C5A059;
+}
+
+/* Hover States */
+.cta-solid:hover {
+  background-color: #A68545;
+  border-color: #A68545;
+}
+
+.cta-outline:hover {
+  background-color: #C5A059;
+  color: #FFFFFF !important;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+  }
+  .cta-button {
+    width: 280px; /* Wider for easier thumb-tapping */
+  }
+}
