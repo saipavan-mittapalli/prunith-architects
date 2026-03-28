@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <header className="hero" id="home">
       <img 
-        src="./src/assets/imgs/hero.webp" 
+        src="https://res.cloudinary.com/dcbo6elv9/image/upload/v1774679015/assets/imgs/hero_pn74zp.avif" 
         className="hero-img" 
         alt="Modern Luxury Interior Architecture" 
       />
