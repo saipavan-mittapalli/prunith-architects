@@ -8,8 +8,8 @@ const Portfolio = () => {
 
   const portfolioData = {
     '3D Models': [
-      { id: '3d-1', title: 'Basic Bedroom render', video: '/src/assets/3D models/video1.mp4' },
-      { id: '3d-2', title: 'Hall with TV unit', video: '/src/assets/3D models/video2.mp4' },
+      { id: '3d-1', title: 'Basic Bedroom render', video: window.location.origin + '/src/assets/3D models/video1.mp4' },
+      { id: '3d-2', title: 'Hall with TV unit', video: window.location.origin + '/src/assets/3D models/video2.mp4' },
     ],
     'Commercial Space': [
       { id: 'comm-1', title: 'Adicto Cafe, Warangal', video: '/src/assets/Commercial Space/video3.mp4' },
