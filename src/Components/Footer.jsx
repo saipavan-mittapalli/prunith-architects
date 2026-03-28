@@ -24,7 +24,7 @@ const Footer = () => {
         
         <div className="footer-contact">
           <h4>Connect</h4>
-          <p>Whatsapp: <a href="https://wa.me/919700856370text=Hello%20Prunith%20Architects,%20I%20just%20viewed%20your%20portfolio%20and%20I'm%20interested%20in%20a%20project.%20I'm%20looking%20for%20an%20Architect.%20Could%20we%20discuss%20the%20next%20steps?" 
+          <p>Whatsapp: <a href="https://wa.me/919700856370text=Hello%20Prunith%20Architects,%20I%20just%20viewed%20your%20portfolio%20and%20I'm%20interested%20in%20a%20project.%20I'm%20looking%20for%20an%20Architect.%20Could%20we%20discuss%20the%20next%20steps?"  
                          target="_blank" rel="noreferrer">Prunith Architects</a></p>
           <p>Instagram: <a href="https://www.instagram.com/prunitharchitects" target="_blank" rel="noreferrer">@prunitharchitects</a></p>
           <p>Email: inquire@prunitharchitects.in</p>
